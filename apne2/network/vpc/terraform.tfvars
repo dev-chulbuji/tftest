@@ -26,3 +26,17 @@ map_public_ip_on_launch = true
 igw_tags                = {}
 public_route_table_tags = {}
 public_subnet_tags      = {}
+
+# private
+private_subnets = [
+  "10.0.100.0/24",
+  "10.0.101.0/24",
+]
+single_nat_gateway     = false
+one_nat_gateway_per_az = true
+enable_nat_gateway     = true
+
+private_subnet_tags      = {}
+private_route_table_tags = {}
+nat_eip_tags             = {}
+nat_gateway_tags         = {}

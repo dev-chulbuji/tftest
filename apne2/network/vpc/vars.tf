@@ -3,6 +3,8 @@ variable "region" {}
 variable "region_code" {}
 variable "owner" {}
 
+variable "azs" {}
+
 # vpc
 variable "name" {}
 variable "cidr" {}
@@ -24,4 +26,13 @@ variable "public_route_table_tags" {}
 variable "map_public_ip_on_launch" {}
 variable "public_subnet_tags" {}
 
-variable "azs" {}
+# private
+variable "private_subnets" {}
+variable "single_nat_gateway" {}
+variable "one_nat_gateway_per_az" { default = false }
+variable "enable_nat_gateway" {}
+
+variable "private_subnet_tags" {}
+variable "private_route_table_tags" {}
+variable "nat_eip_tags" {}
+variable "nat_gateway_tags" {}
