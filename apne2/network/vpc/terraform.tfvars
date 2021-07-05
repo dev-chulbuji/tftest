@@ -20,7 +20,7 @@ default_security_group_tags    = {}
 # public
 public_subnets = [
   "10.0.0.0/24",
-  "10.0.1.0/24",
+  "10.0.3.0/24",
 ]
 map_public_ip_on_launch = true
 igw_tags                = {}
@@ -30,7 +30,7 @@ public_subnet_tags      = {}
 # private
 private_subnets = [
   "10.0.100.0/24",
-  "10.0.101.0/24",
+  "10.0.103.0/24",
 ]
 single_nat_gateway     = false
 one_nat_gateway_per_az = true
