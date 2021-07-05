@@ -1,0 +1,16 @@
+version: 3
+
+projects:
+  - name: apne2-network-vpc
+    dir: apne2/network/vpc
+    workflow: common
+    autoplan:
+      when_modified: ["**/*.tf*"]
+
+workflows:
+  common:
+    plan:
+      steps:
+        - run: rm -rf .terraform
+        - init:
+        - plan:
