@@ -1,6 +1,6 @@
 module "this" {
 //  source = "../../../../modules/vpc"
-  source = "git::https://dev-chulbuji@github.com/dev-chulbuji/terraform-modules.git//vpc?ref=vpc_0.0.1"
+  source = "git::https://dev-chulbuji:${MODULE_PASSWD}}@github.com/dev-chulbuji/terraform-modules.git//vpc?ref=vpc_0.0.1"
 
   name                 = var.name
   region               = var.region
